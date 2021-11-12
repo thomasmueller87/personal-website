@@ -64,6 +64,21 @@ header {
   background-color: white;
 }
 
+.cv-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cv-block {
+  background-color: rgba(0, 91, 196, 0.26);
+  margin: 10px 10px;
+}
+
+.study {
+  background-color: rosybrown;
+}
+
 footer,
 p {
   margin-bottom: 0px;
