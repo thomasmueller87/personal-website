@@ -1,125 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My personal website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>#about Thomas Müller</title>
   </head>
   <body>
     <header>
       <h1>Thomas Müller</h1>
-      <nav>
-        <a href="#contact">contact</a>
-        <a href="#biography">biography</a>
+      <nav class="navbox">
         <a href="#cv">CV</a>
+        <a href="#contect">contact</a>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="photo">
         <img
-          src="https://www.martermuehle.de/media/image/1b/04/64/Nerd.jpg"
-          width="350 px"
-          alt="Thomas Müller drinking coffee"
-        /><br />
-        A photo about myself while drinking a cup of coffee
-        <hr width="50%" align="left" />
+          src="photo.jpg"
+          width="400px"
+          alt="Picture showing Thomas Müller"
+        />
       </section>
+      <section class="tags">
+        <h2>#my attributes</h2>
+        <div>Tag1</div>
+        <div>Tag2</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+        <div>Tag3</div>
+      </section>
+      <section class="cv">
+        <h2>#my CV</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel
+        itaque consequuntur, aperiam cumque blanditiis, dolorem laboriosam amet
+        officia nihil omnis, ab commodi dolor minus dolore quibusdam.
+        Doloremque, necessitatibus magnam! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quod modi recusandae quidem est eum
+        deserunt. Ea placeat corporis officia alias sapiente perferendis, unde
+        cum voluptates magni atque veritatis aspernatur mollitia necessitatibus
+        ducimus ad doloribus recusandae ipsum quos! Culpa, dolores laboriosam!
+      </section>
+      <section class="contact">
+        <h2>#get in touch</h2>
+        <p>GitHub</p>
+        <p>LinkedIn</p>
+        <p>Xing</p>
+      </section>
+      <section class="contact-formula">
+        <h2>#text me</h2>
 
-      <section id="things">
-        Things I like:
-        <ul>
-          <li>Mountainbikes</li>
-          <li>Motorcylces</li>
-          <li>Bouldern</li>
-          <li>Coding</li>
-        </ul>
-        Things I hate:
-        <ul>
-          <li>Spiders</li>
-          <li>Early mornings</li>
-          <li>Tourist traps</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>You can find me everywhere</h2>
-        <ul>
-          <li>Live in Hückswagen / Germany</li>
-          <li>via phone +49 171 12345678</li>
-        </ul>
-
-        <a href="https://github.com/thomasmueller87"
-          ><img
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
-            width="300"
-            alt="at GitHub"
-        /></a>
-        <div>
-          <a href="https://github.com/thomasmueller87">Meetme at GitHub</a>
-        </div>
-        <br />
-        <a href="https://www.linkedin.com/in/thomas-m%C3%BCller-6655b6220/"
-          ><img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
-            width="300"
-            alt="at GitHub"
-        /></a>
-        <div>
-          <a href="https://www.linkedin.com/in/thomas-m%C3%BCller-6655b6220/"
-            >Meetme at LinkedIn</a
-          >
-        </div>
-      </section>
-      <section id="biography">
-        <h2>My biography</h2>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi
-        cupiditate voluptates natus sit aliquid magnam amet, eius ducimus ullam
-        sed quod non tempora obcaecati ut cumque dolores explicabo. Nesciunt,
-        nobis error! Assumenda nemo, atque sed, exercitationem labore obcaecati
-        cumque nobis repellendus libero, a expedita praesentium ea recusandae
-        magnam non ipsa cupiditate. Ad porro optio vel sequi sint nam similique
-        minus repellat doloribus exercitationem sit impedit, molestias suscipit,
-        possimus amet?
-      </section>
-      <section id="cv">
-        <h2>My CV</h2>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi
-        cupiditate voluptates natus sit aliquid magnam amet, eius ducimus ullam
-        sed quod non tempora obcaecati ut cumque dolores explicabo. Nesciunt,
-        nobis error! Assumenda nemo, atque sed, exercitationem labore obcaecati
-        cumque nobis repellendus libero, a expedita praesentium ea recusandae
-        magnam non ipsa cupiditate. Ad porro optio vel sequi sint nam similique
-        minus repellat doloribus exercitationem sit impedit, molestias suscipit,
-        possimus amet? <br />
-      </section>
-      <section id="formular">
-        <p>Schreib mir eine Nachricht!</p>
         <form action="" method="get">
-          <label for="name">Name</label>
-          <input type="text" name="name_form" id="name" />
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
           <div>
-            <label for="email">E-Mail</label>
-            <input type="email" name="email-form" id="email" />
+            <label for="email">Your email address</label>
+            <input type="email" name="email" id="email" />
           </div>
           <div>
-            <label for="nachricht">Deine Nachricht</label><br />
+            <label for="message">Your message</label><br />
             <textarea
-              name="nachricht-form"
-              id="nachricht"
+              name="message"
+              id="message"
               cols="30"
               rows="10"
             ></textarea>
           </div>
           <div>
-            <input type="checkbox" name="newsletter" id="newsletter-form" />
-            <label for="newsletter">Ja, ich möchte den Newsletter!</label>
+            <input type="checkbox" name="newsletter" id="newsletter" />
+            <label for="newsletter">Yes, send me the newsletter!</label>
           </div>
-          <button>Absenden</button>
+          <button>Submit</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>(C) 2021 by Thomas Müller | <a href="impressum.html">imprint</a></p>
+      <p>(c) 2021 by Thomas Müller | <a href="imprint.html">imprint</a></p>
     </footer>
   </body>
 </html>
