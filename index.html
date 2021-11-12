@@ -4,83 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>#about Thomas Müller</title>
   </head>
   <body>
-    <header>
-      <h1>Thomas Müller</h1>
-      <nav class="navbox">
-        <a href="#cv">CV</a>
-        <a href="#contect">contact</a>
-      </nav>
-    </header>
-    <main>
-      <section class="photo">
-        <img
-          src="photo.jpg"
-          width="400px"
-          alt="Picture showing Thomas Müller"
-        />
-      </section>
-      <section class="tags">
-        <h2>#my attributes</h2>
-        <div>Tag1</div>
-        <div>Tag2</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-        <div>Tag3</div>
-      </section>
-      <section class="cv">
-        <h2>#my CV</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel
-        itaque consequuntur, aperiam cumque blanditiis, dolorem laboriosam amet
-        officia nihil omnis, ab commodi dolor minus dolore quibusdam.
-        Doloremque, necessitatibus magnam! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Quod modi recusandae quidem est eum
-        deserunt. Ea placeat corporis officia alias sapiente perferendis, unde
-        cum voluptates magni atque veritatis aspernatur mollitia necessitatibus
-        ducimus ad doloribus recusandae ipsum quos! Culpa, dolores laboriosam!
-      </section>
-      <section class="contact">
-        <h2>#get in touch</h2>
-        <p>GitHub</p>
-        <p>LinkedIn</p>
-        <p>Xing</p>
-      </section>
-      <section class="contact-formula">
-        <h2>#text me</h2>
+    <div class="main-frame">
+      <header>
+        <h1>Thomas Müller</h1>
+        <nav class="navbox">
+          <a href="#cv">CV</a>
+          <a href="#get-in-touch">get-in-touch</a>
+        </nav>
+      </header>
+      <main>
+        <section class="photo">
+          <img src="photo.jpg" alt="Picture showing Thomas Müller" />
+        </section>
+        <section class="tags">
+          <h2>#my attributes</h2>
+          <div class="flexbox">
+            <div class="attributes">#coder</div>
+            <div class="attributes">#front end dev</div>
+            <div class="attributes">#professionally experienced</div>
+            <div class="attributes">#sales</div>
+            <div class="attributes">#motorcylce</div>
+            <div class="attributes">#climbing</div>
+            <div class="attributes">#nature</div>
+            <div class="attributes">#digital native</div>
+            <div class="attributes">#b2b</div>
+            <div class="attributes">#hands-on</div>
+            <div class="attributes">#communication</div>
+            <div class="attributes">#customer service</div>
+            <div class="attributes">#teamplayer</div>
+          </div>
+        </section>
+        <section id="cv" class="cv">
+          <h2>#my CV</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel
+          itaque consequuntur, aperiam cumque blanditiis, dolorem laboriosam
+          amet officia nihil omnis, ab commodi dolor minus dolore quibusdam.
+          Doloremque, necessitatibus magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quod modi recusandae quidem est eum
+          deserunt. Ea placeat corporis officia alias sapiente perferendis, unde
+          cum voluptates magni atque veritatis aspernatur mollitia
+          necessitatibus ducimus ad doloribus recusandae ipsum quos! Culpa,
+          dolores laboriosam!
+        </section>
+        <section id="get-in-touch" class="get-in-touch">
+          <h2>#get in touch</h2>
+          <p>GitHub</p>
+          <p>LinkedIn</p>
+          <p>Xing</p>
+        </section>
+        <section class="contact-formula">
+          <h2>#text me</h2>
 
-        <form action="" method="get">
-          <label for="name">Your name</label>
-          <input type="text" name="name" id="name" />
-          <div>
-            <label for="email">Your email address</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div>
-            <label for="message">Your message</label><br />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <div>
-            <input type="checkbox" name="newsletter" id="newsletter" />
-            <label for="newsletter">Yes, send me the newsletter!</label>
-          </div>
-          <button>Submit</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>(c) 2021 by Thomas Müller | <a href="imprint.html">imprint</a></p>
-    </footer>
+          <form action="" method="get">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+            <div>
+              <label for="email">Your email address</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="message">Your message</label><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <label for="newsletter">Yes, send me the newsletter!</label>
+            </div>
+            <button>Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>(c) 2021 by Thomas Müller | <a href="imprint.html">imprint</a></p>
+      </footer>
+    </div>
   </body>
 </html>

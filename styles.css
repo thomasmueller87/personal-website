@@ -1,10 +1,61 @@
 * {
   box-sizing: border-box;
+  /* outline: 1px dashed purple; */
 }
 
+.main-frame {
+  background-color: rgba(232, 244, 255, 0.774);
+  margin: 15px;
+  box-shadow: 3px 10px 3px 4px rgba(0, 0, 0, 0.308);
+  border-radius: 25px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.568);
+  border-width: 2px;
+}
 body {
   font-family: Helvetica, sans-serif;
+  color: rgb(4, 53, 94);
   background-color: rgb(132, 136, 134);
   margin: 0 auto;
   text-align: center;
+  margin: 0;
+}
+a {
+  color: rgb(4, 53, 94);
+  text-decoration: none;
+}
+a:hover {
+  text-shadow: 3px 3px 5px darkmagenta;
+}
+h1,
+h2 {
+  font-family: Lobster;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.3em;
+}
+header {
+  padding: 10px;
+}
+
+.photo img {
+  width: 350px;
+  border-radius: 15px;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+}
+.attributes {
+  background-color: grey;
+}
+
+footer,
+p {
+  margin-bottom: 0px;
 }
