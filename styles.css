@@ -67,18 +67,47 @@ header {
 .cv-flexbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .cv-block {
   background-color: rgba(0, 91, 196, 0.26);
   margin: 10px 10px;
+  border: solid 1px rgba(0, 91, 196, 0.26);
+  border-radius: 15px 0;
+  padding: 5px;
+  width: 290px;
 }
 
+.cv-block:hover {
+  background-color: white;
+}
 .study {
   background-color: rosybrown;
 }
 
+.study hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(0, 91, 196, 0.26);
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-template-rows: 1;
+}
+
+.cv-grid-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cv-grid-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
 footer,
 p {
   margin-bottom: 0px;
