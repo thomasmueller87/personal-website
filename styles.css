@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-shadow: 3px 3px 5px darkmagenta;
+  color: white;
 }
 h1,
 h2 {
@@ -86,13 +86,6 @@ header {
   background-color: rosybrown;
 }
 
-.study hr {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgba(0, 91, 196, 0.26);
-}
-
 .cv-grid {
   display: grid;
   grid-template-columns: auto 100px;
@@ -107,9 +100,19 @@ header {
 .cv-grid-2 {
   grid-column: 2;
   grid-row: 1;
+  text-align: right;
 }
-footer,
-p {
+
+.cv-job {
+  padding: 2px 0;
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 5px 0;
+}
+
+.cv-block:hover .cv-job {
+  background-color: rgba(0, 0, 0, 0.295);
+}
+footer p {
   margin-bottom: 0px;
 }
 
